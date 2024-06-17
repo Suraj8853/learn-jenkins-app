@@ -16,7 +16,7 @@ pipeline {
                     npm run build
                     ls -la
                   npm install -g serve
-                  HOST=0.0.0.0 PORT=3000 nohup npm start &
+                npm run start &
                 '''
             }
         }
