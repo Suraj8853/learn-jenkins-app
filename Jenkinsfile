@@ -15,8 +15,8 @@ pipeline {
                     npm ci
                     npm run build
                     ls -la
-                    npm install -g http-server
-                    nohup http-server ./build -p 3001 &
+                  npm install -g serve
+                  HOST=0.0.0.0 PORT=3000 nohup npm start &
                 '''
             }
         }
