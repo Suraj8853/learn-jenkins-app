@@ -1,6 +1,8 @@
 pipeline {
      
-
+ tools {
+        nodejs "Nodejs" // Ensure NodeJS is configured in Global Tool Configuration
+    }
     stages {
         stage('Build') {
 
