@@ -15,7 +15,8 @@ pipeline {
                     npm ci
                     npm run build
                     ls -la
-                    npm run start
+                    npm install -g http-server
+                    nohup http-server ./build -p 50000 &
                 '''
             }
         }
